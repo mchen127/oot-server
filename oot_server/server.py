@@ -20,6 +20,7 @@ def upload_file():
         print('upload image error')
     cloth_image_path = './OOTDiffusion/images/shirt.jpg'
     # oot diffusion process
+    """
     script_path = './oot-inference.sh'
     command = [
         script_path,
@@ -34,6 +35,8 @@ def upload_file():
     print("Return code:", result.returncode)
     print("Output:", result.stdout)
     print("Error:", result.stderr)
+    """
+    
 
     # fake diffusion process
     shirt = cv2.imread(cloth_image_path, 1)
